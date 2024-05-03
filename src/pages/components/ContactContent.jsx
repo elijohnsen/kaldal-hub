@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContactCom() {
+function ContactContent() {
   return (
     <>
       <section className="flex text-white">
@@ -34,4 +34,4 @@ function ContactCom() {
   );
 }
 
-export default ContactCom;
+export default ContactContent;

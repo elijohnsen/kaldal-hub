@@ -11,16 +11,15 @@ const Navbar = () => {
   return (
     <div className="navbar xl:px-8 2xl:px-10 bg-cyan-300">
       <div className="navbar-start">
-        <button
+        <a
           href="/"
           className=" shadow-sm btn btn-info text-3xl md:text-4xl select-none whitespace-nowrap"
         >
           <h1>MIKKEL KALDAL Photo</h1>
-        </button>
+        </a>
       </div>
       <div className="navbar-end">
         <ul className="text-3xl hidden lg:flex menu menu-horizontal">
-        
           <li>
             <a href="/contact">Contact</a>
           </li>
@@ -30,7 +29,7 @@ const Navbar = () => {
             tabIndex={0}
             role="button"
             className="hover:bg-cyan-100  hover:rounded-2xl lg:hidden"
-            onClick={toggleDropdown} // Add onClick event handler
+            onClick={toggleDropdown}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +49,7 @@ const Navbar = () => {
           <ul
             tabIndex={0}
             className={`menu menu-sm dropdown-content mt-1 z-[1] p-1 shadow bg-base-100 rounded-box w-64 h-54 right-0 ${
-              dropdownOpen ? "" : "hidden" // Conditionally apply 'hidden' class
+              dropdownOpen ? "" : "hidden" //
             }`}
           >
             <li>
@@ -60,7 +59,6 @@ const Navbar = () => {
             </li>
             <li>
               <a className="text-3xl">Portfolio</a>
-      
             </li>
           </ul>
         </div>
