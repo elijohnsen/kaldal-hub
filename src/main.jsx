@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./pages/components/Navbar";
 import NoFind from "./pages/NoFind";
 import Video from "./pages/Video";
+import Showroom from "./pages/Showroom";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
     element: <Video />,
   },
   {
-    
+    path: "/showroom",
+    element: <Showroom/>,    
   },
 
   {
