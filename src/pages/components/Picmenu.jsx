@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Picmenu() {
   return (
     <div className="grid z-0 mx-auto gap-3 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 2xl:mx-48 p-14">
-      <Link to="/contact" className="relative">
+      <Link to="/showroom" className="relative">
         <div className="max-w-full">
           <img
             className="max-w-full"
@@ -15,7 +15,7 @@ function Picmenu() {
           </p>
         </div>
       </Link>
-      <Link to="/" className="relative">
+      <Link to="/showroom" className="relative">
         <div className="max-w-full">
           <img
             className="max-w-full"
@@ -26,7 +26,7 @@ function Picmenu() {
           </p>
         </div>
       </Link>
-      <Link to="/contact" className="relative">
+      <Link to="/showroom" className="relative">
         <div className="max-w-full">
           <img
             className="max-w-full"
@@ -35,7 +35,7 @@ function Picmenu() {
           <p className=" bg-white absolute text-3xl inset-0 flex items-center justify-center">Performance</p>
         </div>
       </Link>
-      <Link to="/contact" className="relative">
+      <Link to="/showroom" className="relative">
         <div className="max-w-full">
           <img
             className="max-w-full"
@@ -46,7 +46,7 @@ function Picmenu() {
           </p>
         </div>
       </Link>
-      <Link to="/contact" className="relative">
+      <Link to="/showroom" className="relative">
         <div className="max-w-full">
           <img
             className="max-w-full"
@@ -57,7 +57,7 @@ function Picmenu() {
           </p>
         </div>
       </Link>
-      <Link to="/contact" className="relative">
+      <Link to="/showroom" className="relative">
         <div className="max-w-full">
           <img
             className="max-w-full"

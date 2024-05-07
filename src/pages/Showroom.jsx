@@ -1,9 +1,10 @@
 import React from 'react'
+import Showbox from './components/Showbox'
 
 const Showroom = () => {
   return (
   <section>
-    {/* her skal de 6 billedkategorier mappes ind */}
+    <Showbox/>
   </section>
   )
 }
