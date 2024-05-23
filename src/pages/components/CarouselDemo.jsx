@@ -2,21 +2,29 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const images = [
-  "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652345767/demo_image2.jpg",
-  "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652366604/demo_image5.jpg",
-  "https://res.cloudinary.com/ifeomaimoh/image/upload/v1652345874/demo_image1.jpg",
+  "https://picsum.photos/id/237/600/400",
+  "https://picsum.photos/id/238/600/400",
+  "https://picsum.photos/id/239/600/400",
 ];
+
 function CarouselDemo() {
   return (
-    <div className="box">
-      <Carousel useKeyboardArrows={true}>
-        {images.map((URL, index) => (
-          <div className="slide">
-            <img alt="sample_file" src={URL} key={index} />
-          </div>
-        ))}
-      </Carousel>
-    </div>
+    <>
+      {/* Only the div beyond  */ }
+      <div className="xl:w-4/5 2xl:w-3/5 mx-auto">
+        <Carousel useKeyboardArrows={true} showArrows={true} showThumbs={false}>
+          {images.map((URL, index) => (
+            <div key={index}>
+              <img alt="sample_file" src={URL} className="w-full " />
+            </div>
+          ))}
+        </Carousel>
+          
+          
+          
+      </div>
+    </>
   );
 }
+
 export default CarouselDemo;

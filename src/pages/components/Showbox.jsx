@@ -4,17 +4,17 @@ import CarouselDemo from "./CarouselDemo";
 const Showbox = () => {
   return (
     <>
-      <div className=" rounded flex bg-cyan-100 mx-auto text-center w-5/6 mt-4 py-4">
-        <div className="flex-auto">1</div>
-        <div className="flex-auto">2</div>
-        <div className="flex-auto">3</div>
-        <div className="flex-auto">4</div>
-        <div className="flex-auto">5</div>
-        <div className="flex-auto">6</div>
+      <div className="hidden lg:flex font-bold gap-4 mx-auto text-center md:w-5/6 mt-4">
+        <div className="flex-auto rounded py-4 bg-cyan-100">Exhibitions</div>
+        <div className="flex-auto rounded py-4 bg-cyan-100">Product</div>
+        <div className="flex-auto rounded py-4 bg-cyan-100">Performance</div>
+        <div className="flex-auto rounded py-4 bg-cyan-100">Artworks</div>
+        <div className="flex-auto rounded py-4 bg-cyan-100">Video Installations</div>
+        <div className="flex-auto rounded py-4 bg-cyan-100">Public Art</div>
       </div>
 
-      <div className="mx-auto mt-8 text-center bg-cyan-100 w-3/5 ">
-        <CarouselDemo/>
+      <div className="mt-10  md:mt-6 text-center text-white font-bold">
+        <CarouselDemo />
       </div>
     </>
   );

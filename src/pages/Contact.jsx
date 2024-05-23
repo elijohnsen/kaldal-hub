@@ -1,12 +1,11 @@
 import React from "react";
-import ContactCom from "./components/ContactContent";
+import ContactContent from "./components/ContactContent";
 
 const Contact = () => {
   return (
     <>
     <section >
-
-      <ContactCom/>
+      <ContactContent/>
     </section>
     </>
   );

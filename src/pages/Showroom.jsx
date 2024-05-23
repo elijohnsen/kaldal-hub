@@ -3,7 +3,7 @@ import Showbox from './components/Showbox'
 
 const Showroom = () => {
   return (
-  <section>
+  <section className=''>
     <Showbox/>
   </section>
   )

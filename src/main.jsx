@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Navbar from "./pages/components/Navbar";
 import NoFind from "./pages/NoFind";
-import Video from "./pages/Video";
+
 import Showroom from "./pages/Showroom";
 
 const router = createBrowserRouter([
@@ -20,14 +20,9 @@ const router = createBrowserRouter([
     element: <Contact />,
   },
   {
-    path: "/video",
-    element: <Video />,
-  },
-  {
     path: "/showroom",
     element: <Showroom/>,    
   },
-
   {
     path: "*",
     element: <NoFind />,
@@ -38,10 +33,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <section className={'min-h-screen bg-cyan-800'}>
+    <main className={'min-h-screen bg-black'}>
 
     <Navbar />
     <RouterProvider router={router}></RouterProvider>
-    </section>
+    </main>
   </React.StrictMode>
 );
