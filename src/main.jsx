@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Navbar from "./pages/components/Navbar";
 import NoFind from "./pages/NoFind";
-
 import Showroom from "./pages/Showroom";
 
 const router = createBrowserRouter([
@@ -21,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/showroom",
-    element: <Showroom/>,    
+    element: <Showroom />,
   },
   {
     path: "*",
@@ -29,14 +28,11 @@ const router = createBrowserRouter([
   },
 ]);
 
-
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <main className={'min-h-screen bg-black'}>
-
-    <Navbar />
-    <RouterProvider router={router}></RouterProvider>
+    <main className={"min-h-screen bg-black"}>
+      <Navbar />
+      <RouterProvider router={router}></RouterProvider>
     </main>
   </React.StrictMode>
 );
